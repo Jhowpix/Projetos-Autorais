@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -7,12 +7,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 
-  <title>Futurist Page</title>
+  <title>Gold Page</title>
 
 </head>
 
 <body>
-  
+  <header>
+    
+
+      <div class="imgheader" data-tilt>
+      <p id="name">Jhonatan</p>
+      <div class="card">
+        <p>De Oliveira Silva<p>
+        <p id="pcard">Practicing web development<br> looking to improve<br> my skills</p>
+        <a id="more" href="#">Read More</a>
+      </div>
+    </div>
+    <div class="navbar">
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Serviços</a>
+        <a href="#">Sobre</a>
+        <a href="#">Arts</a>
+        <a href="#">Contato</a>
+      </nav>
+    </div>
+
+    <div class="logo">
+      <div class="textheader">
+        <h1>New<br>Dreams</h1>
+        <h4>New Areas To Work</h4>
+      </div>
+      <p id="pheader"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea dolor consequatur commodi quae tempora repellat corrupti tempore magnam expedita excepturi blanditiis minima reiciendis saepe veritatis, ad doloribus ducimus veniam qui.</p>
+    </div>
+   
+  </header>
+  <main>
+    <button class="btnheader" type="button">Test New Experiences</button>
+  <div></div>
+  </main>
+  <footer>
+  <div></div>
+  <div></div>
+  <div></div>
+  </footer>
   <script src="JavaScript.js"></script>
+<!-- at the end of the body -->
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script> 
+VanillaTilt.init(document.querySelectorAll(".card"),{
+  max: 25,
+  spped:400
+}); 
+</script>
 </body>
 </html>
