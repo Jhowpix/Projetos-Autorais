@@ -16,7 +16,7 @@ body{
   grid-template-areas: "navbar navbar navbar"                     
                       "main main main"
                       "footer footer footer";
-  overflow-x: hidden;
+  overflow-x: hidden;               
 }
 
 p{
@@ -30,7 +30,6 @@ p{
 
 a{
   text-decoration: none;
-  color: #fbd951;
 }
 
 .navbar nav{
@@ -62,42 +61,41 @@ a{
 }
 
 main{
+  position: relative;
   grid-area: main;
+  text-align: center;
   width: 100vw;
-  height: 600px;
+  height: auto;
   margin-top: 24px;
   margin-bottom: 20px;
+  background-color: #000000;
+  background-image: url(../img/31233790-EB55-4F54-ACDB-BA315B27AEDD.JPEG);
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 0 0 50px #000;
 }
 
-.container{
-  position: absolute;
+.post {
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 2fr 1fr;
-  width: 100vw;
-  height: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 40px;
+  padding-left: 13%;
 }
 
-.righttext{
-  gri
-
-}
-
-.certimg{
+.post div{
+  position: relative;
+  width: 180px;
+  height: 120px;
+  background: #fbd83f3e;
+  box-shadow: 0 0 10px #68560c;
+  text-align: center;
   
-}
-.certimg img{
-  width: 30px;
-}
-
-.leftimg{
-  background-color: #826b0453;
 }
 
 footer{
+  position: relative;
   grid-area: footer;
   display: flex;
   width: 100vw;
@@ -135,3 +133,4 @@ h2{
   font-size: 10px;
   text-shadow: 0 0 10px #826b04;
 }
+
