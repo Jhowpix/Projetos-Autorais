@@ -7,7 +7,10 @@
 }
 
 body{
+  background-color: #000;
   background-image: linear-gradient( 45deg, black, #292824 );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   width: 100vw;
   height: 100%;
   display: grid;
