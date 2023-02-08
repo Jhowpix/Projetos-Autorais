@@ -8,14 +8,14 @@
 
 body{
   background-color: #000;
-  background-image: linear-gradient( 45deg, black, #292824 );
+  background-image: linear-gradient( 120deg, black, #0f0f0e );
   background-attachment: fixed;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100%;
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows: 7%  70% 18%;
+  grid-template-rows: 7%  84% 9%;
   grid-template-areas: "navbar navbar navbar"                     
                       "main main main"
                       "footer footer footer";
@@ -33,6 +33,9 @@ p{
 
 a{
   text-decoration: none;
+  color: #f8dc6b;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  letter-spacing: 0.1em;
 }
 
 .navbar nav{
@@ -72,14 +75,15 @@ main{
   margin-top: 24px;
   margin-bottom: 20px;
   background-color: #000000;
-  background-image: url(../img/31233790-EB55-4F54-ACDB-BA315B27AEDD.JPEG);
+  background-image: url(../img/Jan_Weckmueller_dark_background_wallpaper_golden_forex_trabec1-ebd975140035.png);
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0 0 50px #000;
+  box-shadow: 0 0 20px #000;
 }
 
 .post {
   position: relative;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -89,8 +93,8 @@ main{
 
 .post div{
   position: relative;
-  width: 180px;
-  height: 120px;
+  width: 280px;
+  height: 200px;
   background: #fbd83f3e;
   box-shadow: 0 0 10px #68560c;
   text-align: center;
