@@ -245,3 +245,99 @@ h2{
   font-size: 10px;
   text-shadow: 0 0 10px #826b04;
 }
+
+@media screen and (max-width: 800px){
+
+  body{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  header{
+    background-image: none;
+  }
+
+  .leftimg{
+    display: none;
+  }
+
+  .certimg{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+    margin: 10px 40px 0 20px;
+  }
+
+  .container{
+    margin-right: 40px;
+  }
+
+  #pcert{
+    font-size: 32px;
+  }
+
+  #estado{
+    font-size: 22px;
+  }
+
+  .post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+  }
+
+  nav{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .navMobile{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 40px;
+  }
+  #w3schools{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    width: 370px;
+    height: auto;
+    
+
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+
+  #contato{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 0 0 20px;
+  }
+
+  #contato a{
+    width: 100vw;
+    margin-bottom: 20px;
+  }
+  
+
+}

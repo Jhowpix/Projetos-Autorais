@@ -12,6 +12,7 @@ body{
   background-repeat: no-repeat;
   width: 100vw;
   height: auto;
+  max-width: 1440px;
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
   grid-template-rows: 7% 45% 7% 30% 18%;
@@ -21,6 +22,7 @@ body{
                       "main main main"
                       "footer footer footer";
   overflow-x: hidden;
+  margin: auto;
 }
 
 a{
@@ -174,6 +176,22 @@ p{
   text-align: left;
 }
 
+.menuMobile{
+  width: 200px;
+  border: none;
+  margin: 20px;
+}
+
+.menuMobile:hover{
+  box-shadow: none;
+  transform: scale(1.4);
+}
+
+span{
+  width: 100px;
+  height: 32px;
+}
+
 .btnheader{
   grid-area: btn;
   display: flex;
@@ -270,6 +288,95 @@ h2{
   width: 40%;
   font-size: 10px;
   text-shadow: 0 0 10px #826b04;
+}
+
+@media screen and (max-width: 800px){
+  body{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  header{
+    background-image: none;
+  }
+
+  main{
+  height: auto;
+  }
+
+  nav{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .navMobile{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 40px;
+  }
+
+  .navMobile span{
+    color: #fff;
+  }
+
+  #divmenu{
+    display: block;
+    color: #fff;
+    background: #292824;
+  }
+
+  #pheader{
+    text-align: left;
+    margin-right: 50px;
+
+  }
+  .cardheader{
+    display: none;
+  }
+   
+  .imgmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+  }
+
+  main > div img{
+    width: 180px;
+    border: 1px solid #736015 ;
+    transition: 0.5s;
+    margin-bottom: 20px;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contato{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 0 0 20px;
+  }
+
+  #contato a{
+    width: 100vw;
+    margin-bottom: 20px;
+  }
+  
+
+}
+
+@media screen and (min-width: 860px){
+  .navMobile{
+    display: none;
+  }
 }
 
 

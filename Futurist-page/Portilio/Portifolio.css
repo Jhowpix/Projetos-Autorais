@@ -141,3 +141,65 @@ h2{
   text-shadow: 0 0 10px #826b04;
 }
 
+@media screen and (max-width: 800px){
+
+  body{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  header{
+    background-image: none;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: none;
+  }
+
+  .post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 40px;
+  }
+
+  nav{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .navMobile{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 40px;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+
+  #contato{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 0 0 20px;
+  }
+
+  #contato a{
+    width: 100vw;
+    margin-bottom: 20px;
+  }
+  
+
+}
