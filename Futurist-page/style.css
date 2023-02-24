@@ -6,12 +6,12 @@
 }
 
 body{
-  background-color: #000;
+  background-color: #292824 ;
   background-image: linear-gradient( 45deg, black, #292824 );
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100vw;
-  height: auto;
+  height: 100vh;
   display: grid;
   grid-template-columns:1fr 1fr 1fr;
   grid-template-rows: 7% 45% 7% 30% 18%;
@@ -198,29 +198,6 @@ span{
   align-items: center;
 }
 
-button{
-  transition: 0.2s;
-}
-
-button:hover{
-  transform: scale(0.9);
-  box-shadow: 0 0 20px #68560c;
-}
-
-button{
-  width: 200px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.2em;
-  padding: 10px 20px;
-  border: 4px solid#dabf56;
-  border-radius: 6px;
-  background: -webkit-linear-gradient(top, #736015 10%, #d2b544, #fbf3d4 );
-  background: linear-gradient(to top, #736015  10%, #d2b544,#fbf3d4 );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
-}
-
 main{
   grid-area: main;
   margin-top: 20px;
@@ -248,6 +225,33 @@ main > div img{
 main > div img:hover{
   transform: scale(1.3);
   box-shadow: 0px 0px 50px #e48b1673;
+}
+
+#iconeBurguer{
+  display: none;
+  color: white;
+}
+
+.btnheader a{
+  grid-area: btn;
+  text-align: center;
+  width: 200px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: 4px solid#dabf56;
+  border-radius: 6px;
+  background: -webkit-linear-gradient(top, #736015 10%, #d2b544, #fbf3d4 );
+  background: linear-gradient(to top, #736015  10%, #d2b544,#fbf3d4 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btnheader a:hover{
+  transform: scale(0.9);
+  box-shadow: 0 0 20px #68560c;
 }
 
 footer{
@@ -294,13 +298,18 @@ h2{
     height: auto;
     display: flex;
     flex-direction: column;
+    margin: none;
+    padding: none;
+    background-attachment: fixed;
   }
+
   header{
     background-image: none;
   }
 
   main{
   height: auto;
+  width: 100vw;
   }
 
   nav{
@@ -309,11 +318,12 @@ h2{
     flex-direction: column;
     margin: 10px;
   }
+
   .navMobile{
     position: relative;
     display: flex;
     align-items: center;
-    width: 100vw;
+    width: 80vw;
     height: 40px;
   }
 
@@ -332,7 +342,16 @@ h2{
     margin-right: 50px;
 
   }
+
   .cardheader{
+    display: none;
+  }
+
+  .textheader {
+   font-size: 20px;
+  }
+
+  .btnheader{
     display: none;
   }
    
@@ -345,7 +364,7 @@ h2{
   }
 
   main > div img{
-    width: 180px;
+    width: 190px;
     border: 1px solid #736015 ;
     transition: 0.5s;
     margin-bottom: 20px;
@@ -354,21 +373,42 @@ h2{
   footer{
     display: flex;
     flex-direction: column;
+    margin-top: 25px;
   }
 
   #contato{
     display:flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 20px 0 0 20px;
   }
 
   #contato a{
-    width: 100vw;
+    margin-bottom: 20px;
+    width: 240px;
+  }
+
+  footer p{
     margin-bottom: 20px;
   }
+
+  span.material-symbols-outlined{
+    display: none;
+  }
+
+  #iconeBurguer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 10px;
+  }
   
+  span #iconeBurguer{
+    width: 60px;
+  }
+
+  #nav{
+    display: none;
+  }
 
 }
 
@@ -376,6 +416,9 @@ h2{
   .navMobile{
     display: none;
   }
+
+
+  
 }
 
 
